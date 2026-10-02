@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#4F46E5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TİD Öğren"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Öğren • Pratik • Gelişim"
+                android:textColor="#E0E7FF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- GÜNÜN KELİMESİ CARD (FIXED) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#1F2937">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Günün Kelimesi"
+                    android:textColor="#93C5FD"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDailyWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="anne"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ARAMA CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <AutoCompleteTextView
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Kelime veya işaret ara"
+                android:padding="12dp"
+                android:background="@android:color/transparent"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BUTTON STACK -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="🔍 Ara"
+                android:backgroundTint="#4F46E5"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnLessons"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="📚 Dersler"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4F46E5"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnExercises"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="🎯 Alıştırmalar"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4F46E5"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnReports"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="📊 Raporlar"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4F46E5"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ℹ️ Hakkında"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4F46E5"
+                android:textColor="#FFFFFF" />
+
+            
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

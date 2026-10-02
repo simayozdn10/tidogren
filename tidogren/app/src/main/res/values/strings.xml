@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tidogren</string>
+    <string name="login_title">Giriş Yap</string>
+    <string name="username_hint">Kullanıcı Adı</string>
+    <string name="password_hint">Şifre</string>
+    <string name="login_button_text">Giriş Yap</string>
+    <string name="go_to_register_prompt">Hesabın yok mu? Kayıt Ol</string>
+</resources>

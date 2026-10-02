@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- BAŞLIK -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uygulama Hakkında"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- AÇIKLAMA -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bu uygulama, Türk İşaret Dilini öğrenmeyi kolaylaştırmak amacıyla geliştirilmiştir. Kullanıcılar dersler ve alıştırmalar ile işaret dili konusunda kendilerini geliştirebilir."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- KAPSAM BAŞLIK -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text= "Proje Kapsamı"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- KAPSAM İÇERİK -->
+            <TextView
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="• İşaret dili dersleri\n• Alıştırmalar ve tekrarlar\n• Kullanıcı ilerleme raporları"
+                android:textSize="16sp" />
+
+            <!-- HEDEF BAŞLIK -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hedef Kitle"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- HEDEF İÇERİK -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İşaret dili öğrenmek isteyen öğrenciler ve bireyler."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- GELİŞTİRİCİ BAŞLIK -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geliştirici"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- GELİŞTİRİCİ İÇERİK -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bu uygulama Bilsem projesi kapsamında Android Studio ve Kotlin dili kullanılarak Simay ÖZDEN ve Yağmur DOĞAN tarafından geliştirilmiştir."
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- GERİ BUTONU -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geri Dön"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

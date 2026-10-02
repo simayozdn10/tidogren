@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="120dp"
+            android:background="#5E35B1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TİD Öğren"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Öğren • Alıştır • Geliştir"
+                android:textColor="#EDE7F6"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+        <!-- ARAMA -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İşaret veya kelime ara"
+            android:layout_margin="16dp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <!-- DERSLER -->
+        <Button
+            android:id="@+id/btnLessons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📘 Dersler"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- ALIŞTIRMALAR -->
+        <Button
+            android:id="@+id/btnExercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✍️ Alıştırmalar"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- RAPORLAR -->
+        <Button
+            android:id="@+id/btnReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Raporlar"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- HAKKINDA -->
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ Hakkında"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
